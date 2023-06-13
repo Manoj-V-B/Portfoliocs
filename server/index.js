@@ -5,6 +5,8 @@ const mycon = require('mysql');
 const fileupload = require('express-fileupload');
 const { request, response } = require('express');
 
+
+
 const app = express();
 app.use(cors());
 app.use(bodyparser.json());
