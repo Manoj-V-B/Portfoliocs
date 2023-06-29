@@ -1,0 +1,136 @@
+
+ CREATE TABLE certificates (
+  Sno bigint NOT NULL AUTO_INCREMENT,
+  userid varchar(300) DEFAULT NULL,
+  certificate_text varchar(300) DEFAULT NULL,
+  filename varchar(300) DEFAULT NULL,
+  url varchar(3000) DEFAULT NULL,
+  PRIMARY KEY (Sno)
+);
+--------------------------------------------
+
+CREATE TABLE educationdetails (
+  id bigint NOT NULL AUTO_INCREMENT,
+  userid varchar(300) DEFAULT NULL,
+  pg_degree varchar(300) DEFAULT NULL,
+  pg_institution varchar(300) DEFAULT NULL,
+  pg_location varchar(300) DEFAULT NULL,
+  pg_percentage varchar(300) DEFAULT NULL,
+  pg_grade varchar(300) DEFAULT NULL,
+  pg_passedout varchar(300) DEFAULT NULL,
+  ug_degree varchar(300) DEFAULT NULL,
+  ug_institution varchar(300) DEFAULT NULL,
+  ug_location varchar(300) DEFAULT NULL,
+  ug_percentage varchar(300) DEFAULT NULL,
+  ug_grade varchar(300) DEFAULT NULL,
+  ug_passedout varchar(300) DEFAULT NULL,
+  hsc_subject varchar(300) DEFAULT NULL,
+  hsc_school varchar(300) DEFAULT NULL,
+  hsc_location varchar(300) DEFAULT NULL,
+  hsc_percentage varchar(300) DEFAULT NULL,
+  hsc_grade varchar(300) DEFAULT NULL,
+  hsc_passedout` varchar(300) DEFAULT NULL,
+  sslc_subjet varchar(300) DEFAULT NULL,
+  sslc_school varchar(300) DEFAULT NULL,
+  sslc_location varchar(300) DEFAULT NULL,
+  sslc_percentage varchar(300) DEFAULT NULL,
+  sslc_grade varchar(300) DEFAULT NULL,
+  sslc_passedout varchar(300) DEFAULT NULL,
+  PRIMARY KEY (id)
+) ;
+---------------------------------------
+
+CREATE TABLE profilephoto (
+  id bigint NOT NULL AUTO_INCREMENT,
+  userid varchar(300) DEFAULT NULL,
+  url varchar(300) DEFAULT NULL,
+  filename varchar(300) DEFAULT NULL,
+  alt_text varchar(300) DEFAULT NULL,
+  status varchar(300) DEFAULT NULL,
+  soft_skill varchar(300) DEFAULT NULL,
+  skill_percentage varchar(300) DEFAULT NULL,
+  soft_skill1 varchar(300) DEFAULT NULL,
+  skill_percentage1 varchar(300) DEFAULT NULL,
+  soft_skill2 varchar(300) DEFAULT NULL,
+  skill_percentage2 varchar(300) DEFAULT NULL,
+  soft_skill3 varchar(300) DEFAULT NULL,
+  skill_percentage3 varchar(300) DEFAULT NULL,
+  soft_skill4 varchar(300) DEFAULT NULL,
+  skill_percentage4 varchar(300) DEFAULT NULL,
+  soft_skill5 varchar(300) DEFAULT NULL,
+  skill_percentage5 varchar(300) DEFAULT NULL,
+  soft_skill6 varchar(300) DEFAULT NULL,
+  skill_percentage6 varchar(300) DEFAULT NULL,
+  soft_skill7 varchar(300) DEFAULT NULL,
+  skill_percentage7 varchar(300) DEFAULT NULL,
+  soft_skill8 varchar(300) DEFAULT NULL,
+  skill_percentage8 varchar(300) DEFAULT NULL,
+  soft_skill9 varchar(300) DEFAULT NULL,
+  skill_percentage9 varchar(300) DEFAULT NULL,
+  soft_skill10 varchar(300) DEFAULT NULL,
+  skill_percentage10 varchar(300) DEFAULT NULL,
+  experience_fieldname varchar(300) DEFAULT NULL,
+  experience_yearinfield varchar(300) DEFAULT NULL,
+  PRIMARY KEY (id)
+) ;
+
+----------------------------------------------------------------------------------
+
+ CREATE TABLE regstatus (
+  id bigint NOT NULL AUTO_INCREMENT,
+  regstate varchar(300) DEFAULT NULL,
+  status varchar(300) DEFAULT NULL,
+  PRIMARY KEY (id)
+);
+
+
+
+-----------------------------------------------------
+
+
+ CREATE TABLE signup (
+  id bigint NOT NULL AUTO_INCREMENT,
+  username varchar(300) DEFAULT NULL,
+  password varchar(300) DEFAULT NULL,
+  name varchar(300) DEFAULT NULL,
+  fathername varchar(300) DEFAULT NULL,
+  Dob varchar(300) DEFAULT NULL,
+  email varchar(300) DEFAULT NULL,
+  phone varchar(30) DEFAULT NULL,
+  status bigint DEFAULT NULL,
+  PRIMARY KEY (id)
+);
+
+
+
+----------------------------------------------------
+
+
+
+ CREATE TABLE social (
+  S_No bigint NOT NULL AUTO_INCREMENT,
+  userid varchar(300) DEFAULT NULL,
+  linkedin varchar(300) DEFAULT NULL,
+  github varchar(300) DEFAULT NULL,
+  PRIMARY KEY (S_No)
+) ;
+
+
+-----------------------------------
+
+
+
+
+ CREATE TABLE user (
+  id bigint NOT NULL AUTO_INCREMENT,
+  username varchar(300) DEFAULT NULL,
+  password varchar(300) DEFAULT NULL,
+  status varchar(300) DEFAULT NULL,
+  PRIMARY KEY (id)
+) ;
+
+
+
+
+
+
